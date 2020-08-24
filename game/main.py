@@ -137,6 +137,9 @@ class MainScreen:
             self.fleet = Alien.create_fleet(self, self.settings)
             self.ship.center_ship()
 
+            #Reset alien's speed
+            self.stats.alien_level_speed = self.stats.alien_speed
+
             #Pause the game.
             sleep(0.5)
         else:

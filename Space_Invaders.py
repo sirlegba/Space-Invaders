@@ -14,7 +14,7 @@ if __name__ == '__main__':
             main.run_game()
         elif gs.screen_name == "start":
             start.start_game()
-        elif screen == "game_over":
+        elif gs.screen_name == "game_over":
             sys.exit()
 
         #Pause the game before changing screen.

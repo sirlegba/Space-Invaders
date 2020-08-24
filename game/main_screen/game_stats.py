@@ -21,10 +21,12 @@ class GameStats:
 
         if self.alien_speed > 20:
             self.alien_speed -= 20
-        elif speed > 1:
+        elif self.alien_speed > 1:
             self.alien_speed -= 1
-        elif speed > 0.01:
+        elif self.alien_speed > 0.01:
             self.alien_speed -= 0.01
+        else:
+            self.alien_speed -= 0.0001
 
         self.alien_level_speed = self.alien_speed
 
